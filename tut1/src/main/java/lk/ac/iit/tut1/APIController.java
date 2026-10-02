@@ -19,4 +19,9 @@ public class APIController {
             return "Get lost.";
         }
     }
+    
+    @GetMapping("/information")
+    public String information() {
+        return "This is tutorial one";
+    }
 }
