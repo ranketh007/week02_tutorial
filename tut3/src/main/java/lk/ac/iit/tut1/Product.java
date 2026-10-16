@@ -29,4 +29,10 @@ public class Product {
         this.name = name;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
