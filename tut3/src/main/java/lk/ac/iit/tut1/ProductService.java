@@ -11,12 +11,17 @@ public class ProductService {
     private List<Product> products = new ArrayList<>();
     private Long nextId = 1L;
 
+    public ProductService(){
+        //id, name and price derives from the superclass Product
+        products.add(new DigitalProduct(1L, "Ebook", 5.99, "file/path/url", 2.5));
+        products.add(new PhysicalProduct(2L, "Refridgerator", 5099.99, 250.69, "25X25"));
+    }
+
     public List<Product> getAllProducts() {
         return products;
     }
     public Product addProduct(Product product) {
         product.setId(nextId++);
-        products.add(product);
         return product;
     }
 
