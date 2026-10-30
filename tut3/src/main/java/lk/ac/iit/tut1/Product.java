@@ -1,6 +1,6 @@
 package lk.ac.iit.tut1;
 
-public class Product {
+public abstract class Product {
     private Long id;
     private String name;
     private double price;
@@ -35,4 +35,6 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public abstract String getSummary();
 }
