@@ -1,4 +1,6 @@
-package lk.ac.iit.tut1;
+package lk.ac.iit.tut1.Model;
+
+import lk.ac.iit.tut1.Service.Discountable;
 
 //Physical Product IS-A Product because PhysicalProduct is a subclass being extended from the superclass
 //ShoppingCart HAS-A Product, therefore cannot be an extended Subclass

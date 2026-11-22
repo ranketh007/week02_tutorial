@@ -1,5 +1,7 @@
-package lk.ac.iit.tut1;
+package lk.ac.iit.tut1.Controller;
 
+import lk.ac.iit.tut1.Model.Address;
+import lk.ac.iit.tut1.Model.Customer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

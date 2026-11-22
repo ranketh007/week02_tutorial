@@ -1,4 +1,4 @@
-package lk.ac.iit.tut1;
+package lk.ac.iit.tut1.Model;
 
 public abstract class Product {
     private Long id;

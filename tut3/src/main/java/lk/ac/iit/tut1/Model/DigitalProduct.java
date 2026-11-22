@@ -1,6 +1,8 @@
-package lk.ac.iit.tut1;
+package lk.ac.iit.tut1.Model;
 
-public class DigitalProduct extends Product implements Discountable{
+import lk.ac.iit.tut1.Service.Discountable;
+
+public class DigitalProduct extends Product implements Discountable {
     private String downloadURL;
     private double fileSize;
     private double discountedPrice;
