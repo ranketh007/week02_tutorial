@@ -25,9 +25,10 @@ public class InMemoryProductRepository implements ProductRepository{
     @Override
     public Product save(Product product) {
         if(product.getId()==null){
+            product.setId(nextId);
             nextId++;
         }
-        store.put(nextId, product);
+        store.put(product.getId(), product);
         return product;
     }
 

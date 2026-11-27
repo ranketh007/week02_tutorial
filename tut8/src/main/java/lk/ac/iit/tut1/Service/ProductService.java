@@ -1,6 +1,7 @@
 package lk.ac.iit.tut1.Service;
 
 import io.swagger.v3.oas.models.security.SecurityScheme;
+import lk.ac.iit.tut1.Exception.ProductNotFoundException;
 import lk.ac.iit.tut1.Model.DigitalProduct;
 import lk.ac.iit.tut1.Model.PhysicalProduct;
 import lk.ac.iit.tut1.Model.Product;
@@ -30,7 +31,7 @@ public class ProductService {
     }
 
     public Product getProductById(Long Id) {
-        return repository.findById(Id).orElseThrow(() -> new IllegalArgumentException("Invalid Id : " + Id));
+        return repository.findById(Id).orElseThrow(() -> new ProductNotFoundException("Invalid Id : " + Id));
     }
 
     public void deleteProductById(Long Id) {
